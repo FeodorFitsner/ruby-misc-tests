@@ -1,3 +1,6 @@
+install:
+  appveyor DownloadFile http://curl.haxx.se/ca/cacert.pem -FileName C:\Ruby193\lib\ruby\site_ruby\1.9.1\rubygems\ssl_certs\ca-bundle.pem
+
 build_script:
   - cmd: bundle install
 
