@@ -1,6 +1,7 @@
 install:
   - appveyor DownloadFile http://curl.haxx.se/ca/cacert.pem
   - SET SSL_CERT_FILE=%APPVEYOR_BUILD_FOLDER%\cacert.pem
+  - gem update --system
   - gem install bundler --quiet --no-ri --no-rdoc
 
 build_script:
