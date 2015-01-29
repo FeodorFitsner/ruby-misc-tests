@@ -3,6 +3,8 @@ install:
   #- SET SSL_CERT_FILE=%APPVEYOR_BUILD_FOLDER%\cacert.pem
   - gem update --system 2.3.0 --quiet --no-ri --no-rdoc
   - gem install bundler --quiet --no-ri --no-rdoc
+  - ruby --version
+  - gem --version
 
 build_script:
   - bundle install
