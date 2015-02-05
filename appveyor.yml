@@ -1,4 +1,4 @@
-os: test
+#os: test
 build_script:
   - set PATH=C:\Ruby193\bin;%PATH%
   - ruby --version
